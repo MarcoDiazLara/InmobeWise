@@ -5,8 +5,9 @@ import { AppComponent } from './app.component';
 const routes: Routes = [
 
   { path: '', component: AppComponent, children:[
-    {path: '', loadChildren: () => import ('./auth/auth.module').then(m => m.AuthModule)}
-  ]  },
+     { path: '', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)}
+
+  ]},
 ];
 
 @NgModule({
