@@ -13,7 +13,7 @@ import { authComponent } from './auth.component';
   ],
   declarations: [
     authComponent,
-    LoginComponent
+    LoginComponent,
 
   ],
   exports: [ ],
