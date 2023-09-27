@@ -1,25 +1,29 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router'; // Asegúrate de importar RouterModule desde '@angular/router'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { InmuebleRoutingModule } from './Inmueble/inmueble-routing.module';
-import { AuthRoutingModule } from './auth/auth-routing.module';
+import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './share/components/navbar/navbar.component';
+import { FooterComponent } from './share/components/footer/footer.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
   imports: [
-    BrowserModule,
-    NgbModule,
-    BrowserAnimationsModule,
-    InmuebleRoutingModule,
-    AuthRoutingModule,
-    AppRoutingModule,
+    BrowserModule, 
+    AppRoutingModule, 
+    RouterModule.forRoot([])
+  ], // Debes especificar las rutas aquí
+  declarations: [
+    AppComponent, 
+    HomeComponent,
+    NavbarComponent,
+    FooterComponent,
+    
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(){}
+}
