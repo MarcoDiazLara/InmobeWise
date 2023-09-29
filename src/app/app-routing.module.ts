@@ -16,6 +16,12 @@ const routes: Routes = [
     loadChildren: () => import('./auth/auth.module').then(a =>a.AuthModule)
   },
   {
+    path:'inmuebles', //localhost/auth/
+    loadChildren: () => import('./inmuebles/inmuebles.module').then(p =>p.InmueblesModule)
+  },
+
+
+  {
     path:'**', 
     component: PageNotFoundComponent
   },
