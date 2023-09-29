@@ -20,7 +20,8 @@ import { RegistroComponent } from './components/registro/registro.component';
     RouterModule.forChild([]),
   ],
   exports:[
-    LoginComponent
+    LoginComponent,
+    RegistroComponent
   ]
 
 })
