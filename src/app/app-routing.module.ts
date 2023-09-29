@@ -8,7 +8,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 const routes: Routes = [
 
   {
-    path:'',
+    path:'', //index
     loadChildren: () => import('./index/index.module').then(m =>m.IndexModule)
   },
   {
@@ -16,9 +16,18 @@ const routes: Routes = [
     loadChildren: () => import('./auth/auth.module').then(a =>a.AuthModule)
   },
   {
-    path:'inmuebles', //localhost/auth/
+    path:'inmuebles', //localhost/inmuebles/
     loadChildren: () => import('./inmuebles/inmuebles.module').then(p =>p.InmueblesModule)
   },
+  {
+    path:'user', //localhost/user/
+    loadChildren: () => import('./user/user.module').then(q =>q.UserModule)
+  },
+
+
+
+
+
 
 
   {
