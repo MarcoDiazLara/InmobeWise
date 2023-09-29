@@ -6,11 +6,10 @@ import { RegistroComponent } from './components/registro/registro.component';
 
 const routes: Routes = [
 
-  {path:'',//localhost/auth
-  component: LoginComponent
-  },
+  {path:'',redirectTo:'Login',pathMatch:'full'},
+  {path:'Login', component: LoginComponent},
   {
-    path:'registro', //localhost/auth/registro
+    path:'registro', 
     component: RegistroComponent
   }
 
