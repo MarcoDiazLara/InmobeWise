@@ -10,7 +10,7 @@ export class HttpService {
 
   iniciarSesion(nombreU: string, password: string){
     let headers: any = new HttpHeaders({ 'Content-Type': 'application/x-www-form-urlencoded' });
-    let params = 'nombreU'+ nombreU + 'password' + password;
+    let params = 'nombreU='+nombreU +'&password=' + password;
     return this.httpclient.post(this.url + 'consultar_login.php', params, { headers });
   }
 
