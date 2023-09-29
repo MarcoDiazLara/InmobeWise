@@ -1,0 +1,41 @@
+/* not-found.component.css */
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+  }
+  
+  .not-found-content {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    font-size: 6em;
+    color: #959193;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #38B6E3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  a:hover {
+    background-color: #264D5E;
+  }
