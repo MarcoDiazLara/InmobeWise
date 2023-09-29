@@ -3,11 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router'; // Asegúrate de importar RouterModule desde '@angular/router'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './share/components/navbar/navbar.component';
-import { FooterComponent } from './share/components/footer/footer.component';
-import { LoginComponent } from './auth/login/login.component';
+
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { RegisComponent } from './auth/regis/regis.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
+
+
+
+
+
+
 
 
 @NgModule({
@@ -15,22 +25,29 @@ import { RegisComponent } from './auth/regis/regis.component';
     BrowserModule, 
     FormsModule, 
     ReactiveFormsModule, 
+    MatButtonModule,
+    MatDividerModule,
+    MatIconModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    FormsModule,
+    ReactiveFormsModule,
+
+
+
+    
     AppRoutingModule, 
     RouterModule.forRoot([])
   ], // Debes especificar las rutas aquí
   declarations: [
-    AppComponent, 
-    NavbarComponent,
-    FooterComponent,
-    LoginComponent,
-    RegisComponent,
-    
-    
+    AppComponent,
+
+
+
   ],
   providers: [],
   bootstrap: [AppComponent],
   
 })
 export class AppModule { 
-  constructor(){}
 }
