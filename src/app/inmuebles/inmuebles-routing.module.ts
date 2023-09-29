@@ -5,6 +5,7 @@ import { AltainmuebleComponent } from './pages/altainmueble/altainmueble.compone
 const routes: Routes = [
 
   {
+
     path:'',
     component: AltainmuebleComponent
   }
