@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { RouterModule } from '@angular/router';
+import { AununciosComponent } from './components/aununcios/aununcios.component';
+
 
 
 
@@ -12,6 +14,7 @@ import { RouterModule } from '@angular/router';
   declarations: [
     FooterComponent,
     NavigationComponent,
+    AununciosComponent,
   ],
   imports: [
     CommonModule, 
@@ -21,6 +24,7 @@ import { RouterModule } from '@angular/router';
   exports:[
     NavigationComponent, 
     FooterComponent,
+    AununciosComponent,
 
   ],
 })

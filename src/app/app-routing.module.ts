@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
@@ -11,8 +12,12 @@ const routes: Routes = [
     loadChildren: () => import('./index/index.module').then(m =>m.IndexModule)
   },
   {
-    path:'auth',
-    loadChildren: () => import('./auth/auth.module').then(m =>m.AuthModule)
+    path:'auth', //localhost/auth/
+    loadChildren: () => import('./auth/auth.module').then(a =>a.AuthModule)
+  },
+  {
+    path:'**', 
+    component: PageNotFoundComponent
   },
 
 
